@@ -11,8 +11,18 @@
     <p id="myParagraph">
       Javascript.
     </p>
-    <script >
+    <script>
+		document.cookie="username=luis";
+	document.cookie="edad=999";
+	document.cookie="pais=Peru";
       window.alert(document.cookie);
+var cookie= document.cookie.split(";");
+	
+for(var i=0;i<cookie.lenght;i++)
+{
+	document.getElementByid("myParagra").innerHTML+=" <br/>"+ cookie[i];
+}
+
     </script>
   </body>
   
